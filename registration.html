@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <a href="#main-content" class="skip-navigation">Skip to main content</a><br />
+  <img src="./Images/altschool_africa.png" alt="Alt school logo" width="200px" />
+  <form action="process_form.php" method="post">
+    <div id="main-content">
+      <h3>Register</h3>
+      <header>Fill out the form to register your information:</header><br><br>
+      <label for="first-name" id="main-content">First Name:</label>
+      <input type="text" id="first-name" name="first name" placeholder="First Name" required maxlength="20"
+        title="Not more than 20 letters">
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last name" placeholder="Last Name" required maxlength="20"
+        title="Not more than 20 letters">
+      <br><br>
+      <label>Gender:</label>
+      <select>
+        <option value="option1">Select Your Gender</option>
+        <option value="option2">Male</option>
+        <option value="option3">Female</option>
+        <option value="option4">Rather Not Say</option>
+      </select>
+      <label for="date">Date of Birth:</label>
+      <input type="date">
+      <br><br>
+      <label for="email">Email Address:</label>
+      <input type="email" placeholder="example@gmail.com">
+      <label for="education">Education Level:</label>
+      <select>
+        <option value="option1">Select level of education</option>
+        <option value="option2">Bsc</option>
+        <option value="option3">HND</option>
+        <option value="option4">Msc</option>
+      </select>
+      <br><br>
+      <label for="status">Employment Status:</label>
+      <select>
+        <option value="option1">Select Status</option>
+        <option value="option2">Employed</option>
+        <option value="option3">Unemployed</option>
+      </select>
+      <label for="Phone">Phone Number:</label>
+      <select>
+        <option value="option1">+234</option>
+        <option value="option2">+233</option>
+        <option value="option3">+232</option>
+        <option value="option4">+44</option>
+        <option value="option5">+1</option>
+        </option>
+      </select>
+      <input type="phone" placeholder="Phone Number">
+      <br><br>
+      <label for="school">Choose School:</label>
+      <select>
+        <option value="option1">School of engineering</option>
+        <option value="option2">School of data</option>
+        <option value="option3">School of product</option>
+      </select>
+      <label for="course">Choose Course Of Study:</label>
+      <select>
+        <option value="option1">Back End Engineering</option>
+        <option value="option2">Front End Engineering</option>
+        <option value="option3">Cloud Engineering</option>
+        <option value="option4">Others</option>
+      </select>
+      <br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="password" required maxlength="20"
+        title="Not more than 20 letters">
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="password" name="password" placeholder="confirm password" required maxlength="20"
+        title="Not more than 20 letters"><br><br>
+      <label for="discount">School Discount Code(optional):</label>
+      <input type="text" placeholder="Discount code"><br>
+      <p>By clicking proceed i agree to <a href="#">Terms of Use</a> and acknowledge that</p>
+      <p>I have read the <a href="#">Privacy Policy</a><input type="checkbox" name="checkbox" id=""></p> <br><br>
+      <input type="submit" value="submit"><br>
+      <p>Go to <a href="./index.html"> About Page</a>
+    </div>
+  </form>
+</body>
+
+</html>
